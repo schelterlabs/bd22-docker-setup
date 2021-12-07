@@ -17,13 +17,13 @@ Download and Install [Docker for Desktop](https://www.docker.com/products/docker
 
 ### Using Image from Docker Hub
 
-1. First, pull the image
+**Step 1:** Pull the image
 
 ```
 docker pull mtasnim/jupyter-pyspark-duckdb
 ```
 
-2. Next, run the image
+**Step 2:**  Run the image
 
 ```
 docker run -p 8888:8888 -v $(pwd):/home/jovyan/work  mtasnim/jupyter-pyspark-duckdb
@@ -32,7 +32,11 @@ docker run -p 8888:8888 -v $(pwd):/home/jovyan/work  mtasnim/jupyter-pyspark-duc
 
 *Note for Students*: make sure your working directory (pwd) is set to a directory containing the assignment notebooks.
 
-3. Now to access the notebooks go to `localhost:8888`. Make sure you copy the notebook token from the terminal in order to access the notebooks.
+**Step 3:**  Access notebooks
+
+To access Jupyter go to `localhost:8888` from your browser. 
+
+Make sure you copy the notebook token from the terminal in order to access the notebooks.
 
 
 
