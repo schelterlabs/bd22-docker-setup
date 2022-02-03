@@ -51,3 +51,7 @@ docker build -t mtasnim/jupyter-pyspark-duckdb .
 ```
 
 To run the image and access the notebooks follow Step 2 and 3 from above.
+
+### Troubleshooting
+
+In Assignment 2, Spark might randomly crash if it doesn't have enough memory available. In case you encounter issues like that, we suggest increasing the amount of memory available to the docker image to at least 4gb. You can increase this limit either via the Docker Dashboard in the Resources setting or via a command line argument that you pass when running `docker run ...`, e.g., `m=4g`. For more information, please refer to the Docker [documentation](https://docs.docker.com/config/containers/resource_constraints/).
